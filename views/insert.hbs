@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>New Product</title>
+</head>
+
+<body>
+    <center>
+        <form action="/doInsert" method="post">
+            <div class="form_insert">
+                Name <input type="text" name="txtName" placeholder="Enter Dish Name...">
+                <span style="color: white; background: black" class="error">{{error.name}}</span>
+                <br>
+                Price <input type="text" name="txtPrice" placeholder="Enter Dish Price..." >
+                <span style="color: white; background: black" class="error">{{error.price}}</span>
+                <br>
+                Url Image: <input type="text" name="imgURL"/>
+                <span style="color: white; background: black" class="error">{{error.img}}</span>
+                <br>
+                <input type="submit" value="Insert">
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
